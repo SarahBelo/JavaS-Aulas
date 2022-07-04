@@ -1,0 +1,30 @@
+body{
+	background-color: blueviolet;
+}
+h1{
+	width: 480px;
+	text-align: center;
+	margin: 60px auto;
+	font-family: Arial;
+	color: #fff;
+	text-shadow: 0 0 10px black;
+}
+p{
+	color: white;
+	font-size: 20px;
+}
+h1::after {
+	content: '|';
+	opacity: 1;
+	margin-left: 5px;
+	display: inline-block;
+	animation: blink .7s infinite;
+}
+@keyframes blink {
+	0%, 100%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0;
+	}
+}

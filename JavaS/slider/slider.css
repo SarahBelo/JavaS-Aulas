@@ -1,0 +1,15 @@
+#dvSlider{
+	width: 1347px ;
+	height: 641px ;
+	background-size: cover;
+	-webkit-transition: 0.5s ease-out;
+	-moz-transition: 0.5s ease-out;
+	-o-transition: 0.5s ease-out;
+	transition: 0.5s ease-out;
+	
+}
+#bt{
+	color: #FFF;
+	background-color: #000;
+	border: 0px;
+}

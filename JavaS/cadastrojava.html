@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro</title>
+	<link rel="stylesheet" type="text/css" href="cadastrojava.css">
+</head>
+<body>
+	<h1>Cadastro Biblioteca </h1>
+	<center>
+<div class="sobre">
+	<label for="nome">Nome:</label>
+	<input type="text" id="nome" name="nome" placeholder="Insira seu nome">
+</div>
+<div class="sobre">
+	<label for="sobrenome">Sobrenome:</label>
+	<input type="text" id="sobrenome" placeholder="Insira seu sobrenome">
+</div>
+<div class="sobre">
+	<label for="email">Email:</label>
+	<input type="email" id="email" placeholder="Insira seu e-mail">
+</div>
+<div class="sobre">
+	<label for="senha">Senha:</label>
+	<input type="password" id="senhor" placeholder="Insira a senha">
+</div>
+<div class="sobre">
+	<label for="telefone">Telefone:</label>
+	<input type="text" id="telefone" placeholder="Insira seu Telefone">
+</div>
+<div class="sobre">
+	<label for="cep">CEP:</label>
+	<input type="text" id="cep" placeholder="Insira seu CEP">
+</div>
+<div class="sobre">
+	<label for="sexo">Sexo:</label>
+	<select name="sexo" id="sexo">
+		<option value="">Informar...</option>
+		<option value="m">Maculino</option>
+		<option value="f">Feminino</option>
+		<option value="x">Não informar</option>
+	</select>
+</div>
+<div class="sobre">
+	<label for="newsletter">Receber novidades</label>
+	<input type="checkbox" id="newsletter">
+	<button type="button" class="botao" onclick="validar()">Enviar</button>
+</div>
+
+	<script>
+		function validar(){
+			var nome=document.getElementById("nome");
+			var sobrenome=document.getElementById("sobrenome");
+			var email=document.getElementById("email");
+			var senha=document.getElementById("senha");
+			var telefone=document.getElementById("telefone");
+			var cep=document.getElementById("cep");
+			var sexo=document.getElementById("sexo");
+			var newsletter=document.getElementById("newsletter").checked;
+		
+
+		if(nome.value == ""){
+			alert("Nome  não informado");
+			nome.focus();
+			return;
+		}
+		if(sobrenome.value ==""){
+			alert("Sobrenome não informado");
+			sobrenome.focus();
+			return;
+		}
+		if(email.value ==""){
+			alert("E-mail não informado");
+			email.focus();
+				return;
+		}
+		if(senha.value ==""){
+			alert("Senha não informada");
+			senha.focus();
+				return;
+		}
+		if(telefone.value ==""){
+			alert("Telefone não informado");
+			telefone.focus();
+			return;
+		}
+		if(cep.value ==""){
+			alert("CEP não informado");
+			ceo.focus();
+			return;
+		}
+		if (sexo.value=="") {
+			alert(Sexo não informado);
+			sexo.focus();
+			return;
+		}
+		alert("Formulário enviado!");
+	}
+	</script>
+</body>
+</html>

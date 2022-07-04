@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: lightblue;
+}
+h1{
+    width: 1400px;
+    text-align: center;
+    margin: 60px auto;
+    padding: 10px;
+    font-family: Arial;
+    color: black;
+    background-color: lightpink;
+    text-shadow: 0 0 5px lightblue;
+}
+.sobre{
+	display: flex;
+	background-color: none;
+	border:5px solid none;
+	width: 20%;
+	margin: 10px;
+	padding: 15px;
+	flex-direction: column;
+}
+.sobre label{
+	width: 93%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: lightblue;
+	font-size: 23px;
+	background-color: black;
+	padding: 10px 12px;
+	border-radius:55px;
+	border:none;
+}
+.sobre input{
+	width: 93%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: lightpink;
+	color: black;
+	padding: 12px 12px;
+	border-radius: 55px;
+	border:none;
+}

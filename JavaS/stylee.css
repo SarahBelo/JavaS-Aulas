@@ -1,0 +1,10 @@
+h1{
+	align-items: center;
+	text-align: center;
+	width: 90vw;
+	height: 10vh;
+	background-color: red;
+	color: white;
+	border:5px solid black;
+	margin: auto;
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banner Slider</title>
+	<link rel="stylesheet" href="slider.css">
+</head>
+<body onload="iniciaSlider()">
+	<div id="dvSlider" onmouseover="parar()" 
+	onmouseout="iniciaSlider()">
+		<input type="button" value="<" id="bt" onclick="troca(-1)">
+		<input type="button" value=">" id="bt" onclick="troca(1)">
+	</div>
+	<script src="slider.js"></script>
+</body>
+</html>
